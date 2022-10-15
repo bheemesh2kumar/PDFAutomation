@@ -33,7 +33,8 @@ public class PDFValidationNegetiveTest {
         String pdfData = pdfUtilities.getPDFfiledata(pdfPath);
         System.out.println("hey iam here  PDF data >>>>>>>>>>>>");
         System.out.println(pdfData);
-        Assert.assertTrue(!pdfData.contains("HackThon123"));
+        Assert.assertFalse(pdfData.contains("HackThon123"));
+        System.out.println("successfully asserted negitive case also");
 
 
     }
